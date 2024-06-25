@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------
+﻿/*------------------------------------------------------------------
     Version: 1.0
 -------------------------------------------------------------------*/
 
@@ -653,7 +653,7 @@ xclip
 }
 .right-box-pro::before {
     content: "";
-    background: url(images/country-quilt-dark.png);
+    background: url(images/country-quilt-dark2.png);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -661,8 +661,6 @@ xclip
     right: -20px;
     z-index: 0;
 }
-
-
 
 .services-inner-box{
 	padding: 15px;
@@ -1466,19 +1464,20 @@ hr.invis1 {
 
 .gallery-list .img-overlay {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     background: rgba(51, 51, 51, 0.80);
     color: #35424C;
     opacity: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
     z-index: 2;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
 }
+
 
 .gallery-list .gallery-single:hover .img-overlay {
     opacity: 1;
@@ -2078,7 +2077,10 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: url(images/black_bg.jpg) no-repeat center center #333333;
+    background-size: cover;
+    min-height:500px;
+    align-content:center;
 }
 
 
@@ -2104,19 +2106,29 @@ select.mobile-device {
     padding: 0;
 }
 
-    .contact_links ul li {
-        margin: 10px 0;
+.contact_links ul li {
+    margin: 10px 0;
+}
+
+.contact_links ul li a {
+    text-decoration: none;
+    color: black; /* Bootstrap default link color */
+    font-size: 18px;
+}
+
+.contact_links ul li a:hover {
+    text-decoration: underline;
+    color: white; /* Bootstrap default link color */
+}
+
+.contact_links a {
+    text-decoration: none;
+    color: black; /* Keeps the original color */
+}
+
+    .contact_links a:hover {
+        color: #B0A1AB; /* Change this to your desired hover color */
     }
-
-        .contact_links ul li a {
-            text-decoration: none;
-            color: #007bff; /* Bootstrap default link color */
-            font-size: 18px;
-        }
-
-            .contact_links ul li a:hover {
-                text-decoration: underline;
-            }
 
 .contact_links {
     display: flex;
@@ -2129,46 +2141,56 @@ select.mobile-device {
 .contact_link_item {
     flex: 1 1 22%; /* Adjust the width to fit 4 columns */
     margin: 10px;
-    padding: 20px;
-    border: 1px solid #DAC2C0;
+    min-width: 250px;
+    padding: 30px; /* Increased padding */
     border-radius: 8px;
     background-color: #B0A1AB; /* Main background color */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
+    font-size: 20px; /* Increased font size */
 }
 
-    .contact_link_item:hover {
-        background-color: #f0e8eb; /* Slightly lighter background color */
-    }
-
-    .contact_link_item a {
-        text-decoration: none;
-        color: #333;
-        font-size: 16px;
-        display: block;
-        margin-top: 8px;
-    }
-
-    .contact_link_item .material-icons {
-        font-size: 36px;
-        color: #333; /* Changed to match text color */
-        transition: color 0.3s ease;
-    }
-
-    .contact_link_item:hover .material-icons {
-        color: #DAC2C0; /* Slightly darker color on hover */
-    }
-
-.contact_form {
-    padding: 30px 0; /* Adjust padding to make the contact form section shorter */
+.contact_link_item:hover {
+    background-color: #f0e8eb; /* Slightly lighter background color */
 }
 
-.form-group {
-    margin-bottom: 15px; /* Reduce vertical space between form elements */
+.contact_link_item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Adjusted font size */
+    display: block;
+    margin-top: 8px;
+}
+
+.contact_link_item .material-icons {
+    font-size: 40px; /* Adjusted icon size */
+    color: #333; /* Changed to match text color */
+    transition: color 0.4s ease;
+}
+
+.contact_link_item:hover .material-icons {
+    color: #DAC2C0; /* Slightly darker color on hover */
 }
 
 .help-block {
     top: 90%; /* Adjust position of validation message */
 }
+
+.custom-bullets {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.custom-bullets li {
+    position: relative;
+}
+
+    .custom-bullets li::before {
+        content: '►';
+        position: absolute;
+        left: -1em;
+    }
+
+
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
