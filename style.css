@@ -201,6 +201,22 @@ ul, li, ol{
             margin-right: 10px;
             color: #e5cfd2; /* Pale greyish pink color for icons */
         }
+
+/*------------------------------------------------------------------
+    SKILLS COLUMNS
+-------------------------------------------------------------------*/
+
+.skills-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+    .skills-columns .column {
+        flex: 1 1 200px;
+    }
+
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
